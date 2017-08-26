@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css">
+    <script src="dados.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="master.css">
+    <script>
+    function loopTxt(i){
+        setTimeout(function(){
+          if(dados[i].hasOwnProperty("codigo")){
+            document.getElementById("teclado").innerHTML += dados[i].codigo;
+          }else {
+            typeWritter("# "+dados[i].linha,'teclado',20);
+          }
+
+     }, 200);
+    }
+
+    function typeWritter(texto,idElemento,tempo){
+        var char = texto.split('').reverse();
+        var typer = setInterval(function () {
+            if (!char.length){
+              document.getElementById("teclado").innerHTML += "<br>";
+              return clearInterval(typer)
+            };
+            var next = char.pop();
+            document.getElementById(idElemento).innerHTML += next;
+        }, tempo);
+    }
+    window.onload = function(){
+      var i = 0;
+      var loop = setInterval(function() {
+        loopTxt(i);
+        i++;
+        if(i === dados.length)
+          clearInterval(loop);
+      },3000);
+
+    }
+
+    </script>
+  </head>
+  <body>
+    <h1>Fernando Silva</h1>
+    <center>
+      <div id="console">
+        <div id="bar">
+        <img src="error.svg" alt=""width=15> <img src="minus.svg" alt=""width=15> <img src="max.svg" alt=""width=15>  fernandosilva@curriculum: <a href="#">fernandosilva.github.io</a>
+        </div>
+        <div id="teclado">
+
+        </div>
+        <script type="text/javascript">
+           </script>
+        <div id="scroll">
+          *
+        </div>
+      </div>
+
+    </center>
+    <div class="footer">
+      <center>
+        <div class="icon">
+          <a href="https://github.com/fernandodsds">
+            <img src="github-logo.svg" width=40 alt="">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.linkedin.com/in/fernando-d-9721b9b0/">
+            <img src="linkedin.svg" width=40 alt="">
+          </a>
+        </div>
+        <div class="icon">
+          <a href="https://www.youtube.com/channel/UC5Vh0fUY79eIlbeRucvd4QQ">
+            <img src="youtube.svg" width=40 alt="">
+          </a>
+        </div>
+
+        </center>
+  </div>
+  </body>
+</html>

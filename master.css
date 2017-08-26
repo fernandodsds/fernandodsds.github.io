@@ -1,0 +1,82 @@
+html,body{
+  margin: 0 auto;
+  background-color: #009385;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+body h1{
+  color: white;
+  text-align: center;
+  font-family: Roboto;
+}
+#console #bar{
+  z-index: 1;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 2px;
+  background-color: #6D93A2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: solid white 0.05px;
+  -webkit-box-shadow: 1px 11px 10px -2px rgba(45,57,61,1);
+  -moz-box-shadow: 1px 11px 10px -2px rgba(45,57,61,1);
+  box-shadow: 1px 11px 10px -2px rgba(45,57,61,1);
+}
+
+#console{
+  font-family: Hack, monospace;
+  font-size: 13px;
+  text-align: left;
+  color: white;
+  width: 60%;
+  background-color: #474E51;
+  border-radius: 5px;
+  height: 430px;
+  -webkit-box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+  -moz-box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+  box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+}
+#teclado{
+  float: left;
+  margin: 1%;
+  width: 95%;
+}
+#scroll{
+  float: right;
+  width: 2%;
+  height: 93%;
+  background-color:white;
+}
+#scroll:hover{
+transition: all 60ms linear;
+color: #929292;
+background-color: #929292;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+#teclado ul{
+  margin: 5px;
+}
+.icon{
+  text-align: center;
+  border-radius: 60%;
+  display: inline-block;
+  background-color:white;
+  width:60px;
+  height:60px;
+  -webkit-box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+  -moz-box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+  box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+}
+
+.icon img{
+  margin-top:9px;
+
+}
