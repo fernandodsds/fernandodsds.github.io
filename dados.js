@@ -1,7 +1,7 @@
 var dados = [
   {"linha":"Meu nome é Fernando dos Santos da Silva"},
   {"linha":"Sou natural de Campinas-SP, tenho 18 anos"},
-  {"linha":"Atuamente minha ocupação profissonal é o exército brasileiro onde trabalho com manutenção de computadores"},
+  {"linha":"Atualmente minha ocupação profissonal é o exército brasileiro onde trabalho com manutenção de computadores"},
   {"linha":"Estou cursando o Técnico de Informatica para Internet no Cotuca"},
   {"linha":"ls -l formacao_academica"},
   {"codigo":"<ul><li>Ensino Médio: Colégio Politécnico Bento Quirino </li><li>Técnico em Informatica: Colégio Politécnico Bento Quirino</li>"},
