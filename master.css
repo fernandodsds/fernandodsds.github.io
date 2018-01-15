@@ -83,13 +83,13 @@ background-color: #929292;
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     #console{
-      font-size: 4px;
+      font-size: 6px;
       height: 190px;
       width: 100%;
 
     }
     #console #bar{
-      font-size: 12px;
+      font-size: 10px;
 
     }
     #scroll{
