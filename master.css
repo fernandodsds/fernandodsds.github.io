@@ -80,3 +80,17 @@ background-color: #929292;
   margin-top:9px;
 
 }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #console{
+      font-size: 4px;
+      height: 190px;
+
+    }
+    #console #bar{
+      font-size: 12px;
+
+    }
+    #scroll{
+      height: 75%;
+    }
