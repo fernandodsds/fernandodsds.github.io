@@ -85,6 +85,7 @@ background-color: #929292;
     #console{
       font-size: 4px;
       height: 190px;
+      width: 100%;
 
     }
     #console #bar{
