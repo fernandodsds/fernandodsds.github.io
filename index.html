@@ -11,12 +11,16 @@
 
     <link rel="stylesheet" href="master.css">
     <script>
+    var fraseando = false
     function loopTxt(i){
         setTimeout(function(){
+          
+
           if(dados[i].hasOwnProperty("codigo")){
             document.getElementById("teclado").innerHTML += dados[i].codigo;
           }else {
-            typeWritter("# "+dados[i].linha,'teclado',20);
+            fraseando = true
+            typeWritter("# "+dados[i].linha,'teclado',10);
           }
 
      }, 200);
@@ -27,7 +31,9 @@
         var typer = setInterval(function () {
             if (!char.length){
               document.getElementById("teclado").innerHTML += "<br>";
+              fraseando = false
               return clearInterval(typer)
+              
             };
             var next = char.pop();
             document.getElementById(idElemento).innerHTML += next;
@@ -35,12 +41,16 @@
     }
     window.onload = function(){
       var i = 0;
+      
       var loop = setInterval(function() {
-        loopTxt(i);
-        i++;
-        if(i === dados.length)
-          clearInterval(loop);
-      },3000);
+        if(fraseando == false){
+            loopTxt(i);
+            i++;
+            if(i === dados.length)
+              clearInterval(loop);
+        }
+
+      },1000);
 
     }
 
@@ -63,9 +73,21 @@
         </div>
       </div>
 
+      <br>
+      <br>
+      <div class= 'menu'>
+        <div class="menu-item"><img src="doc.png" width="20"></img> <a target="_blank" href="https://docs.google.com/document/d/1nlg62wAPxdjUxGD-zC54Rva-ObIrN-SuJciraJWlqHI/edit?usp=sharing">CURRICULUM </a> </div>
+
+      </div>
+
     </center>
     <div class="footer">
       <center>
+        <div class="icon">
+          <a href="https://stackoverflow.com/users/10968970/fernando-dos-santos">
+            <img src="stack.png" width=40 alt="">
+          </a>
+        </div>
         <div class="icon">
           <a href="https://github.com/fernandodsds">
             <img src="github-logo.svg" width=40 alt="">

@@ -80,6 +80,25 @@ background-color: #929292;
   margin-top:9px;
 
 }
+
+.menu-item{
+  background-color:whitesmoke;
+  width: 10%;
+  font-size: 20px;
+  font-family: 'monospace';
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+  -moz-box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+  box-shadow: 10px 10px 24px -7px rgba(6,18,17,1);
+}
+
+.menu-item a{
+color: black;
+}
+.warning{
+  color: goldenrod;
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     #console{
