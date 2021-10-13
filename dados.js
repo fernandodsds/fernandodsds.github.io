@@ -13,7 +13,7 @@ var dados = [
   {"linha":"ls -l habilidades"},
   {"codigo":"<ul><li>Python</li><li>Microsoft SQL Server</li><li>PostgreSQL</li><li>MySQL</li><li>Cloud Computing</li><li>Linux</li><li>Containers</li></ul>"},
   {"linha":"ls -l contato"},
-  {"codigo":"<ul><li>Gmail: fernandodsds36@gmail.com</li><li>Whatsapp: (19)98290-1075</li></ul>"},
+  {"codigo":"<ul><li>Gmail: fernandodsds36@gmail.com</li></ul>"},
 
 
 
